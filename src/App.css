@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #FCFAF9;
+    min-height: 100vh;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.whole {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 50px 72px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wholeHome {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 72px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*.home {*/
+/*    background-image: url("../src/app/assets/images/HomeImage.png");*/
+/*}*/
+
+.quizWhole {
+    padding: 50px 72px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quizTitle {
+    max-width: 800px;
+    width: 100%;
+    margin: 44px auto 22px;
+    text-align: center;
+    font-family: CrimsonText_Bold, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112.433%;
+    color: #010A1C;
+}
+
+.quizSubTitle {
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto 60px;
+    text-align: center;
+    font-family: CrimsonText_Bold, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112.433%;
+    color: #010A1C;
+}
+
+.quizDiv {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz {
+    font-family: Roboto_Bold, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: #010A1C;
+    margin-bottom: 20px;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.number {
+    color: #9D9D9C;
+    font-family: Roboto_Regular, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.activeNumber {
+    color: #010A1C;
+    font-family: Roboto_Bold, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.below {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pagination li.active {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #4caf50;
+}
+
+.iconStyle {
+    cursor: pointer;
+}
+
+.iconStyleNotAllowed {
+    cursor: not-allowed;
+}
+
+.apexcharts-yaxis-label {
+    z-index: 10000000;
+}
+
+@media only screen  and (max-width: 767px) {
+    .whole {
+        padding: 20px;
+    }
+
+    .wholeHome {
+        padding: 20px;
+    }
+
+    .quizWhole {
+        padding: 20px;
+    }
+
+    .quizSubTitle {
+        margin-bottom: 22px;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .quizTitle {
+        font-size: 62px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .quizTitle {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 425px)  and (max-width: 767px) {
+    .quizTitle {
+        font-size: 38px;
+    }
+
+    .quizDiv {
+        margin-bottom: 22px;
+        justify-content: center;
+    }
+
+    .quiz {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+}
+
+@media only screen  and (max-width: 424px) {
+    .quizTitle {
+        font-size: 32px;
+    }
+
+    .quizDiv {
+        margin-bottom: 22px;
+        justify-content: center;
+    }
+
+    .quiz {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .numbers {
+        padding-right: 15px;
+        /*gap: 25px;*/
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .chartResponsive {
+        width: 500px;
+    }
+}
+
+
+/*@media only screen and (min-width: 768px) and (max-width: 1024px) {*/
+/*    .whole {*/
+/*        height: 500px;*/
+/*    }*/
+/*}*/
+
+@font-face {
+    font-family: Roboto_Bold;
+    src: url('../src/app/assets/fonts/Roboto/Roboto_Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Medium;
+    src: url('../src/app/assets/fonts/Roboto/Roboto_Medium.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Regular;
+    src: url('../src/app/assets/fonts/Roboto/Roboto_Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Light;
+    src: url('../src/app/assets/fonts/Roboto/Roboto_Light.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Italic;
+    src: url('../src/app/assets/fonts/Roboto/Roboto_Italic.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Thin;
+    src: url('../src/app/assets/fonts/Roboto/Roboto_Thin.ttf');
+}
+
+
+@font-face {
+    font-family: CrimsonText_Bold;
+    src: url('../src/app/assets/fonts/Crimson/CrimsonText_Bold.ttf');
+}
+
+@font-face {
+    font-family: CrimsonText_BoldItalic;
+    src: url('../src/app/assets/fonts/Crimson/CrimsonText_BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: CrimsonText_Italic;
+    src: url('../src/app/assets/fonts/Crimson/CrimsonText_Italic.ttf');
+}
+
+@font-face {
+    font-family: CrimsonText_Regular;
+    src: url('../src/app/assets/fonts/Crimson/CrimsonText_Regular.ttf');
+}
+
+@font-face {
+    font-family: CrimsonText_SemiBold;
+    src: url('../src/app/assets/fonts/Crimson/CrimsonText_SemiBold.ttf');
+}
+
+@font-face {
+    font-family: CrimsonText_SemiBoldItalic;
+    src: url('../src/app/assets/fonts/Crimson/CrimsonText_SemiBoldItalic.ttf');
+}

@@ -1,0 +1,111 @@
+.boldTitle {
+    text-align: center;
+    font-family: CrimsonText_Bold, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112.433%;
+    color: #010A1C;
+    margin-bottom: 22px;
+}
+
+.modalInside {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputAndSend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send {
+    cursor: pointer;
+    max-width: fit-content;
+    border-radius: 12px;
+    margin: 22px auto 0;
+    padding: 10px 20px;
+    background: #9D9D9C;
+    font-family: Roboto_Regular, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #000;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendNotAllowed {
+    cursor: not-allowed;
+    max-width: fit-content;
+    border-radius: 12px;
+    margin: 22px auto 0;
+    padding: 10px 20px;
+    background: #9D9D9C;
+    font-family: Roboto_Regular, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #000;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputStyle {
+    border-radius: 12px;
+    background: #EEF2F5;
+    height: 38px;
+    width: 350px;
+    color: #000;
+    font-family: Roboto_Regular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    padding-left: 20px;
+}
+
+.errorDiv {
+    border-radius: 12px;
+    background: #EEF2F5;
+    height: 38px;
+    width: 350px;
+    color: #000;
+    font-family: Roboto_Regular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    padding-left: 20px;
+    border: 2px solid red
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .inputStyle {
+        width: 250px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .boldTitle {
+        font-size: 26px;
+    }
+
+    .send {
+        font-size: 16px;
+    }
+}
